@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Q&A</title>
+  <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+  <div class="container">
+    <h2>YouTube Transcript Q&A</h2>
+    <form action="/result" method="post">
+      <label for="video_id">YouTube Video ID:</label>
+      <input type="text" id="video_id" name="video_id" required>
+
+      <label for="question">Your Question:</label>
+      <textarea id="question" name="question" rows="5" required></textarea>
+
+      <button type="submit">Get Answer</button>
+    </form>
+  </div>
+</body>
+</html>
